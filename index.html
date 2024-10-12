@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Hyperlinks</title>
+    <style>
+       body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('bkg.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .links {
+            display: flex;
+            gap: 200px; /* Space between the words */
+        }
+        .links a {
+            text-decoration: none; /* Remove underline from links */
+            color: #F7F7FF; /* Link color */
+            font-size: 65px; /* Font size of the words */
+        }
+	@media (max-width: 768px) {
+            .links {
+                gap: 50px; /* Reduce space between the words on smaller screens */
+            }
+            .links a {
+                font-size: 40px; /* Reduce font size on smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .links {
+                flex-direction: column;
+                gap: 40px; /* Further reduce space between the words on smaller screens */
+            }
+            .links a {
+                font-size: 40px; /* Further reduce font size on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="https://www.weddingwire.com/website/samuel-witte-and-luisa-lucie-smith">English</a>
+        <a href="https://www.weddingwire.com/website/samuel-witte-and-luisa-lucie-smith">Italiano</a>
+    </div>
+</body>
+</html>
