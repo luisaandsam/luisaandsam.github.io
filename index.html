@@ -62,16 +62,22 @@
         }
 
         /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            .centered-text {
-                flex-direction: column; /* Stack the text on smaller screens */
-                font-size: 8vw; /* Increase font size for readability */
-            }
-        }
+                @media (max-width: 768px) {
+                    body {
+                        background-position: center; /* Center the image for smaller screens */
+                        background-size: cover; /* Keep it covering for mobile */
+                    }
+        
+                    .centered-text {
+                        flex-direction: column; /* Stack the text on smaller screens */
+                        font-size: 8vw; /* Increase font size for readability */
+                    }
+                }
 
         @media (max-width: 480px) {
-            .centered-text {
-                font-size: 10vw; /* Further increase font size for mobile devices */
+            body {
+                background-position: center; /* Center the image further for very small screens */
+                background-size: cover; /* Keep it covering */
             }
         }
     </style>
