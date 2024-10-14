@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Website</title>
+    
+    <style>
+        /* Set the background image with transparency */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('IMG_5929.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* Add transparency to the background using overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.6); /* White overlay with 60% transparency */
+            z-index: 1;
+        }
+
+        /* Centering the text and links */
+        .centered-text {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 3rem;
+            color: #333; /* Dark text for contrast */
+            display: flex;
+            gap: 2rem; /* Space between "Italian" and "English" */
+        }
+
+        /* Styling for the language links */
+        .centered-text a {
+            text-decoration: none;
+            color: #333; /* Match text color */
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .centered-text a:hover {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Centered text with language options -->
+    <div class="centered-text">
+        <a href="https://www.matrimonio.com/web/luisa-lucie-smith-and-samuel-witte">Italiano</a>
+        <a href="https://www.weddingwire.us/website/samuel-witte-and-luisa-lucie-smith">English</a>
+    </div>
+</body>
+</html>
